@@ -19,6 +19,21 @@
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
   <?php echo $this->Html->css('AdminLTE.skins/skin-'. Configure::read('Theme.skin') .'.min'); ?>
+		<?= $this->Html->css('jquery-ui.min.css') ?>
+		<?= $this->Html->css('jquery-ui.theme.min.css') ?>
+
+  <!-- jQuery 3 -->
+<?php echo $this->Html->script('AdminLTE./bower_components/jquery/dist/jquery.min'); ?>
+
+<!-- Bootstrap 3.3.7 -->
+<?php echo $this->Html->script('AdminLTE./bower_components/bootstrap/dist/js/bootstrap.min'); ?>
+<!-- AdminLTE App -->
+<?php echo $this->Html->script('AdminLTE.adminlte.min'); ?>
+<!-- Slimscroll -->
+<?php echo $this->Html->script('AdminLTE./bower_components/jquery-slimscroll/jquery.slimscroll.min'); ?>
+<!-- FastClick -->
+<?php echo $this->Html->script('AdminLTE./bower_components/fastclick/lib/fastclick'); ?>
+<?= $this->Html->script('jquery-ui.min')  ?>
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -72,16 +87,8 @@
 </div>
 <!-- ./wrapper -->
 
-<!-- jQuery 3 -->
-<?php echo $this->Html->script('AdminLTE./bower_components/jquery/dist/jquery.min'); ?>
-<!-- Bootstrap 3.3.7 -->
-<?php echo $this->Html->script('AdminLTE./bower_components/bootstrap/dist/js/bootstrap.min'); ?>
-<!-- AdminLTE App -->
-<?php echo $this->Html->script('AdminLTE.adminlte.min'); ?>
-<!-- Slimscroll -->
-<?php echo $this->Html->script('AdminLTE./bower_components/jquery-slimscroll/jquery.slimscroll.min'); ?>
-<!-- FastClick -->
-<?php echo $this->Html->script('AdminLTE./bower_components/fastclick/lib/fastclick'); ?>
+
+
 
 <?php echo $this->fetch('script'); ?>
 
@@ -94,12 +101,12 @@
             alwaysVisible: false,
             size: "3px"
         }).css("width", "100%");
-        
+
         var a = $('a[href="<?php echo $this->Url->build() ?>"]');
         if (!a.parent().hasClass('treeview') && !a.parent().parent().hasClass('pagination')) {
             a.parent().addClass('active').parents('.treeview').addClass('active');
         }
-        
+
     });
 </script>
 

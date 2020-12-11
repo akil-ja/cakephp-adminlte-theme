@@ -3,10 +3,10 @@
   <div class="container">
   <?php endif; ?>
     <div class="pull-right hidden-xs">
-      <b>Version</b> 2.4.5
+   
     </div>
-    <strong>Copyright &copy; 2014-2016 <a href="https://adminlte.io">Almsaeed Studio</a>.</strong> All rights
-    reserved.
+    <strong>Copyright @ University of Guelph-Humber</strong>
+   
   <?php if (isset($layout) && $layout == 'top'): ?>
   </div>
   <?php endif; ?>
