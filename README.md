@@ -28,7 +28,7 @@ public function bootstrap()
 ```
 
 ### Enable Theme
-
+..
 ```php
 // src/Controller/AppController.php
 
