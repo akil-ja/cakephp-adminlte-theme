@@ -58,7 +58,8 @@
                 <li><a href="<?php echo $this->Url->build('/student-financial-arrangement-requests/add'); ?>"><i
                             class="fa fa-arrow-circle-right"></i> Student Financial<br>Arrangement Request</a>
                 </li>
-            <?php } ?>
+                <?php
+            } ?>
         </ul>
 
     </li>
